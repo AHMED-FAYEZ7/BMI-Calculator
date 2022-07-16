@@ -45,7 +45,7 @@ class _BmiScreenState extends State<BmiScreen> {
                       child: Container(
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
+                          children: const [
                             Image(
                               image: AssetImage('assets/images/R.png'),
                               height: 90,
@@ -82,7 +82,7 @@ class _BmiScreenState extends State<BmiScreen> {
                       child: Container(
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
+                          children: const [
                             Image(
                               image: AssetImage('assets/images/R (1).png'),
                               height: 90,
@@ -118,7 +118,7 @@ class _BmiScreenState extends State<BmiScreen> {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text(
+                    const Text(
                         'HEIGHT',
                       style: TextStyle(
                         fontSize: 25,
@@ -132,13 +132,13 @@ class _BmiScreenState extends State<BmiScreen> {
                       children: [
                         Text(
                           '${height.round()}',
-                          style: TextStyle(
+                          style: const TextStyle(
                             fontSize: 40,
                             fontWeight: FontWeight.w900,
                           ),
                         ),
                         SizedBox(width: 5,),
-                        Text(
+                        const Text(
                           'cm',
                           style: TextStyle(
                             fontSize: 20,
@@ -178,7 +178,7 @@ class _BmiScreenState extends State<BmiScreen> {
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Text(
+                          const Text(
                             'AGE',
                             style: TextStyle(
                               fontSize: 25,
@@ -186,8 +186,8 @@ class _BmiScreenState extends State<BmiScreen> {
                             ),
                           ),
                           Text(
-                            '${age}',
-                            style: TextStyle(
+                            '$age',
+                            style: const TextStyle(
                               fontSize: 40,
                               fontWeight: FontWeight.w900,
                             ),
@@ -202,7 +202,7 @@ class _BmiScreenState extends State<BmiScreen> {
                                     age--;
                                   });
                                 },
-                                child: Icon(
+                                child: const Icon(
                                   Icons.remove,
                                 ),
                                 mini: true,
@@ -215,7 +215,7 @@ class _BmiScreenState extends State<BmiScreen> {
                                     age++;
                                   });
                                 },
-                                child: Icon(
+                                child: const Icon(
                                   Icons.add,
                                 ),
                                 mini: true,
@@ -231,13 +231,13 @@ class _BmiScreenState extends State<BmiScreen> {
                       ),
                     ),
                   ),
-                  SizedBox(width: 20,),
+                  const SizedBox(width: 20,),
                   Expanded(
                     child: Container(
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Text(
+                          const Text(
                             'WEIGHT',
                             style: TextStyle(
                               fontSize: 25,
@@ -245,8 +245,8 @@ class _BmiScreenState extends State<BmiScreen> {
                             ),
                           ),
                           Text(
-                            '${weight}',
-                            style: TextStyle(
+                            '$weight',
+                            style: const TextStyle(
                               fontSize: 40,
                               fontWeight: FontWeight.w900,
                             ),
@@ -261,7 +261,7 @@ class _BmiScreenState extends State<BmiScreen> {
                                     weight--;
                                   });
                                 },
-                                child: Icon(
+                                child: const Icon(
                                   Icons.remove,
                                 ),
                                 mini: true,
@@ -274,7 +274,7 @@ class _BmiScreenState extends State<BmiScreen> {
                                     weight++;
                                   });
                                 },
-                                child: Icon(
+                                child: const Icon(
                                   Icons.add,
                                 ),
                                 mini: true,
@@ -302,7 +302,7 @@ class _BmiScreenState extends State<BmiScreen> {
               onPressed: ()
               {
                 double result = weight / pow(height/ 100, 2);
-                print(result.round());
+                // print(result.round());
                 Navigator.push(
                   context,
                   MaterialPageRoute(
@@ -314,7 +314,7 @@ class _BmiScreenState extends State<BmiScreen> {
                   ),
                 );
               },
-              child: Text(
+              child: const Text(
                 'CALCULATE',
                 style: TextStyle(
                   color: Colors.white,

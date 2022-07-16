@@ -23,11 +23,11 @@ class BmiResultScreen extends StatelessWidget {
           {
             Navigator.pop(context);
           },
-          icon: Icon(
+          icon: const Icon(
             Icons.keyboard_arrow_left,
           ),
         ),
-        title: Text(
+        title: const Text(
           'BMI Result',
         ),
       ),
@@ -37,7 +37,7 @@ class BmiResultScreen extends StatelessWidget {
           children: [
             Text(
               'Gender : ${isMale ? 'MALE' : 'FEMALE'}',
-              style: TextStyle(
+              style: const TextStyle(
                 fontSize: 25,
                 fontWeight: FontWeight.bold,
                 color: Colors.white,
@@ -45,7 +45,7 @@ class BmiResultScreen extends StatelessWidget {
             ),
             Text(
               'AGE : $age',
-              style: TextStyle(
+              style: const TextStyle(
                 fontSize: 25,
                 fontWeight: FontWeight.bold,
                 color: Colors.white,
@@ -53,7 +53,7 @@ class BmiResultScreen extends StatelessWidget {
             ),
             Text(
               'Result : $result',
-              style: TextStyle(
+              style: const TextStyle(
                 fontSize: 25,
                 fontWeight: FontWeight.bold,
                 color: Colors.white,
